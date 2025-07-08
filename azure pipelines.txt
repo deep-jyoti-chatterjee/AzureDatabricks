@@ -1,0 +1,23 @@
+We have a Azure datalake storage which contains a raw container in which there are 2 folders, folder1 and folder2. Folder1 contains file1.csv and file2.csv while folder2 contains file3.csv
+
+Using Azure data factory, we need to move them to a Azure SQL DB where table1 contains data from file1 and file2 and table2 contains data from file3
+
+What is the most optimised method to achieve this with Linked services, datasets and pipelines and activities.
+Explain step by step on how to do in MS azure as well
+
+
+
+
+
+
+
+
+
+
+In an azure datalake storage 'adlstrd2025', we have a container raw which contains a folder named folder1 which as a source_1.zip
+
+we need it to move it another azure datalake storage named 'adlstrd2025deep' in its raw container as it is.
+then move and unzip into its refined container, which then will contain a folder named source_1 and it has 3 files named top1.csv, top2.csv, top3.csv 
+then move and merge then into processed container
+
+how to achieve this using azure data factory
